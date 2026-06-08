@@ -22,13 +22,13 @@ implementing repository is structured.
 
 ## Decision
 
-- **pnpm workspace monorepo** hosting `@cesco/identity-contracts` and
-  `@cesco/identity-auth-sdk` (room for future `@cesco/*` libs).
+- **pnpm workspace monorepo** hosting `@cesco_valle/identity-contracts` and
+  `@cesco_valle/identity-auth-sdk` (room for future `@cesco_valle/*` libs).
 - **ESM-only**, built with **tsup** (`.js` + `.d.ts`), TypeScript strict, tested
   with **Vitest**.
-- **`@cesco/identity-contracts`** holds Zod schemas + inferred types, mirroring
+- **`@cesco_valle/identity-contracts`** holds Zod schemas + inferred types, mirroring
   `identity-service`'s schemas 1:1, and depends only on `zod`.
-- **`@cesco/identity-auth-sdk`** ships only the `./user` and `./admin` subpath
+- **`@cesco_valle/identity-auth-sdk`** ships only the `./user` and `./admin` subpath
   exports (no root) so the admin client cannot leak into a browser bundle. The
   user client is edge-safe; the admin client is Node/server-only.
 - **Public npm** under the personal `@cesco` scope (`publishConfig.access:

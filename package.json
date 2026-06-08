@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "description": "Shared packages for the portfolio identity service (@cesco/identity-contracts, @cesco/identity-auth-sdk).",
+  "description": "Shared packages for the portfolio identity service (@cesco_valle/identity-contracts, @cesco_valle/identity-auth-sdk).",
   "engines": {
     "node": ">=18"
   },

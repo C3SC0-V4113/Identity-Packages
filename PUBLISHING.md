@@ -22,8 +22,8 @@ pnpm -r publish --access public # publishes in dependency order; converts worksp
 Verify:
 
 ```bash
-npm view @cesco/identity-contracts version
-npm view @cesco/identity-auth-sdk version
+npm view @cesco_valle/identity-contracts version
+npm view @cesco_valle/identity-auth-sdk version
 ```
 
 ## Recommended: release via Changesets + CI
@@ -34,7 +34,7 @@ npm view @cesco/identity-auth-sdk version
 
 ## Notes
 
-- `@cesco/identity-auth-sdk` depends on `@cesco/identity-contracts`. Bump and
+- `@cesco_valle/identity-auth-sdk` depends on `@cesco_valle/identity-contracts`. Bump and
   publish contracts first (pnpm handles ordering automatically with `-r`).
 - A breaking change to a contract shape is a **major** version bump and should be
   reflected in the SDK.

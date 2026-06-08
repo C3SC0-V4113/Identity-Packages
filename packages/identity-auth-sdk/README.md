@@ -1,11 +1,11 @@
-# @cesco/identity-auth-sdk
+# @cesco_valle/identity-auth-sdk
 
 Typed HTTP clients for the portfolio identity service, built on
-`@cesco/identity-contracts`. Two **separate, server-safe entrypoints**:
+`@cesco_valle/identity-contracts`. Two **separate, server-safe entrypoints**:
 
-- `@cesco/identity-auth-sdk/user` — cookie/session surface for end-user apps
+- `@cesco_valle/identity-auth-sdk/user` — cookie/session surface for end-user apps
   (browser + Next.js server/edge).
-- `@cesco/identity-auth-sdk/admin` — service-principal (bearer) surface for
+- `@cesco_valle/identity-auth-sdk/admin` — service-principal (bearer) surface for
   `mcp-server` and operators. **Server-only**; never import it in a browser/edge
   bundle.
 
@@ -14,14 +14,14 @@ Typed HTTP clients for the portfolio identity service, built on
 ## Install
 
 ```bash
-npm install @cesco/identity-auth-sdk
+npm install @cesco_valle/identity-auth-sdk
 ```
 
 ## Usage (planned)
 
 ```ts
-import { createUserAuthClient } from '@cesco/identity-auth-sdk/user';
-import { createAdminClient } from '@cesco/identity-auth-sdk/admin';
+import { createUserAuthClient } from '@cesco_valle/identity-auth-sdk/user';
+import { createAdminClient } from '@cesco_valle/identity-auth-sdk/admin';
 ```
 
 ESM-only. The user client uses only global `fetch` / web APIs (edge-safe).

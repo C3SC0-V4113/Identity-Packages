@@ -35,7 +35,7 @@ importers:
 
   packages/identity-auth-sdk:
     dependencies:
-      '@cesco/identity-contracts':
+      '@cesco_valle/identity-contracts':
         specifier: workspace:*
         version: link:../identity-contracts
       zod:

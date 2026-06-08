@@ -5,8 +5,8 @@
 `identity-packages` is a **pnpm monorepo** of shared npm libraries for the
 portfolio identity ecosystem, published under the `@cesco` scope on public npm:
 
-- `@cesco/identity-contracts` — Zod schemas + inferred types (the wire contracts).
-- `@cesco/identity-auth-sdk` — typed HTTP clients (`./user`, `./admin`).
+- `@cesco_valle/identity-contracts` — Zod schemas + inferred types (the wire contracts).
+- `@cesco_valle/identity-auth-sdk` — typed HTTP clients (`./user`, `./admin`).
 
 It is library code consumed by `identity-service` (server), `other-gpt` /
 `cost-console` (Next.js), and `mcp-server` (Node). The authority for auth/identity
@@ -31,7 +31,7 @@ transport.
   shapes; mirror `identity-service`'s schemas 1:1 (same field names and enums).
 - **Keep the package framework-agnostic** — only `zod`. No Fastify/Prisma/Next
   imports in either package.
-- **Separate, server-safe entrypoints.** `@cesco/identity-auth-sdk` exposes only
+- **Separate, server-safe entrypoints.** `@cesco_valle/identity-auth-sdk` exposes only
   `./user` and `./admin` (no root) so a frontend bundle can never pull in the
   admin client. The user client is edge-safe (global `fetch` / web APIs only);
   the admin client may assume Node.

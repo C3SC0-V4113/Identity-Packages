@@ -1,5 +1,5 @@
 {
-  "name": "@cesco/identity-auth-sdk",
+  "name": "@cesco_valle/identity-auth-sdk",
   "version": "0.1.0",
   "description": "Typed HTTP clients for the portfolio identity service: user (cookie) and admin (service-principal) surfaces.",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@cesco/identity-contracts": "workspace:*",
+    "@cesco_valle/identity-contracts": "workspace:*",
     "zod": "^4.1.12"
   },
   "devDependencies": {

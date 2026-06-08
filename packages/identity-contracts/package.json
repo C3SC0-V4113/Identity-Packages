@@ -1,5 +1,5 @@
 {
-  "name": "@cesco/identity-contracts",
+  "name": "@cesco_valle/identity-contracts",
   "version": "0.1.0",
   "description": "Shared Zod schemas and TypeScript types for the portfolio identity service surfaces.",
   "license": "MIT",
