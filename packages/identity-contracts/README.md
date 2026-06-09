@@ -1,22 +1,42 @@
 # @cesco_valle/identity-contracts
 
 Shared **Zod schemas + inferred TypeScript types** for the portfolio identity
-service wire contracts (user / project-admin / machine-admin surfaces). The single
-source of truth consumed by `identity-service` (server-side validation) and
+service wire contracts. The single source of truth, mirrored 1:1 from
+`identity-service` and consumed by it (server-side validation) and by
 `@cesco_valle/identity-auth-sdk`.
 
-> Scaffold in progress — the schemas land in the next checkpoint.
+Only depends on `zod`. ESM-only.
 
 ## Install
 
 ```bash
-npm install @cesco_valle/identity-contracts
+npm install @cesco_valle/identity-contracts zod
 ```
 
-## Usage (planned)
+## Entry points
+
+Import from the surface you need:
+
+- `@cesco_valle/identity-contracts/user` — end-user cookie/session surface
+  (`projectAuthLoginRequestSchema`, `projectAuthResponseSchema`,
+  `registerEmailCheckResponseSchema`, …).
+- `@cesco_valle/identity-contracts/project-admin` — project-admin (cookie) surface
+  (memberships, audit logs, sessions, admin-operations list).
+- `@cesco_valle/identity-contracts/admin` — machine-admin surface (the mutation
+  envelope, per-operation payloads, `decideApproval`, read queries).
+- `@cesco_valle/identity-contracts/shared` — common primitives
+  (`projectSummarySchema`, `membershipStatusSchema`, `apiErrorSchema`, …).
+- The package root re-exports `shared` flat plus the `user` / `projectAdmin` /
+  `admin` **namespaces** (e.g. `import { user } from '@cesco_valle/identity-contracts'`).
+
+## Usage
 
 ```ts
-import { loginRequestSchema, type ProjectAuthResponse } from '@cesco_valle/identity-contracts';
-```
+import {
+  projectAuthLoginRequestSchema,
+  type ProjectAuthResponse,
+} from '@cesco_valle/identity-contracts/user';
 
-Only depends on `zod`. ESM-only.
+const body = projectAuthLoginRequestSchema.parse({ email, password });
+// `ProjectAuthResponse` types the /login response.
+```
