@@ -1,7 +1,7 @@
 # identity-packages
 
 Shared npm packages for the portfolio identity service ecosystem. Published under
-the personal scope **`@cesco`** on public npm.
+the personal scope **`@cesco_valle`** on public npm.
 
 | Package | What it is | Consumed by |
 | --- | --- | --- |
