@@ -1,6 +1,6 @@
 {
   "name": "@cesco_valle/identity-contracts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Shared Zod schemas and TypeScript types for the portfolio identity service surfaces.",
   "license": "MIT",
   "type": "module",
@@ -8,7 +8,9 @@
     "node": ">=18"
   },
   "sideEffects": false,
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

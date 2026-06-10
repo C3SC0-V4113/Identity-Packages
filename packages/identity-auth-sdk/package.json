@@ -1,6 +1,6 @@
 {
   "name": "@cesco_valle/identity-auth-sdk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Typed HTTP clients for the portfolio identity service: user (cookie) and admin (service-principal) surfaces.",
   "license": "MIT",
   "type": "module",
@@ -8,7 +8,9 @@
     "node": ">=18"
   },
   "sideEffects": false,
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     "./user": {
       "types": "./dist/user.d.ts",
