@@ -28,8 +28,7 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@cesco_valle/identity-contracts": "workspace:*",
-    "zod": "^4.1.12"
+    "@cesco_valle/identity-contracts": "workspace:*"
   },
   "devDependencies": {
     "tsup": "^8.5.0",

@@ -38,9 +38,6 @@ importers:
       '@cesco_valle/identity-contracts':
         specifier: workspace:*
         version: link:../identity-contracts
-      zod:
-        specifier: ^4.1.12
-        version: 4.4.3
     devDependencies:
       tsup:
         specifier: ^8.5.0
