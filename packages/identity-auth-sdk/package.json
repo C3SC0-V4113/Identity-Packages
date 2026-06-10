@@ -3,6 +3,12 @@
   "version": "0.2.0",
   "description": "Typed HTTP clients for the portfolio identity service: user (cookie) and admin (service-principal) surfaces.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C3SC0-V4113/Identity-Packages.git",
+    "directory": "packages/identity-auth-sdk"
+  },
+  "homepage": "https://github.com/C3SC0-V4113/Identity-Packages/tree/main/packages/identity-auth-sdk",
   "type": "module",
   "engines": {
     "node": ">=18"

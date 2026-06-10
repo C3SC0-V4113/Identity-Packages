@@ -3,6 +3,12 @@
   "version": "0.2.0",
   "description": "Shared Zod schemas and TypeScript types for the portfolio identity service surfaces.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C3SC0-V4113/Identity-Packages.git",
+    "directory": "packages/identity-contracts"
+  },
+  "homepage": "https://github.com/C3SC0-V4113/Identity-Packages/tree/main/packages/identity-contracts",
   "type": "module",
   "engines": {
     "node": ">=18"
